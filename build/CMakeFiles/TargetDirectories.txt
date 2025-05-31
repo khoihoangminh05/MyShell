@@ -1,3 +1,3 @@
-D:/Projects/MyShell/build/CMakeFiles/MyShell.dir
-D:/Projects/MyShell/build/CMakeFiles/edit_cache.dir
-D:/Projects/MyShell/build/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/.vscode/MyShell/build/CMakeFiles/MyShell.dir
+C:/Users/admin/.vscode/MyShell/build/CMakeFiles/edit_cache.dir
+C:/Users/admin/.vscode/MyShell/build/CMakeFiles/rebuild_cache.dir

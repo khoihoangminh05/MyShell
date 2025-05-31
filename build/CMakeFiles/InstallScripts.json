@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/Projects/MyShell/build/cmake_install.cmake"
+		"C:/Users/admin/.vscode/MyShell/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

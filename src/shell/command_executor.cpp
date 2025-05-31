@@ -6,12 +6,14 @@
 
 namespace executor {
     bool run(std::string command, const std::vector<std::string>& tokens) {
-
+        if (command.empty()) {
+            return true; // Tiếp tục shell mà không làm gì cả
+        }
         if (command == "help") {
             commands::help();
         } 
         else if (command == "exit") {
-            return true; // Exit the shell
+            return false; // Exit the shell
         } 
         else if (command == "set_color") {
             commands::setcolor(tokens);
@@ -43,6 +45,6 @@ namespace executor {
         else {
             std::cout << "Unknown command: " << command << "\n";
         }
-        return false; // Continue running the shell
+        return true; // Continue running the shell
     }
 }
