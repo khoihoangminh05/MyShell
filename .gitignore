@@ -1,0 +1,22 @@
+# Build artifacts
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/*.cmake
+/*.o
+/*.obj
+/*.exe
+/*.a
+/*.so
+/*.dll
+
+# VSCode settings
+.vscode/
+
+# Backup / temp files
+*~
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
