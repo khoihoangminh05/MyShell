@@ -200,6 +200,78 @@ src/commands/set_color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/set_color.cpp.s
 .PHONY : src/commands/set_color.cpp.s
 
+src/io/directory_commands.obj: src/io/directory_commands.cpp.obj
+.PHONY : src/io/directory_commands.obj
+
+# target to build an object file
+src/io/directory_commands.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.obj
+.PHONY : src/io/directory_commands.cpp.obj
+
+src/io/directory_commands.i: src/io/directory_commands.cpp.i
+.PHONY : src/io/directory_commands.i
+
+# target to preprocess a source file
+src/io/directory_commands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.i
+.PHONY : src/io/directory_commands.cpp.i
+
+src/io/directory_commands.s: src/io/directory_commands.cpp.s
+.PHONY : src/io/directory_commands.s
+
+# target to generate assembly for a file
+src/io/directory_commands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.s
+.PHONY : src/io/directory_commands.cpp.s
+
+src/io/file_commands.obj: src/io/file_commands.cpp.obj
+.PHONY : src/io/file_commands.obj
+
+# target to build an object file
+src/io/file_commands.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/file_commands.cpp.obj
+.PHONY : src/io/file_commands.cpp.obj
+
+src/io/file_commands.i: src/io/file_commands.cpp.i
+.PHONY : src/io/file_commands.i
+
+# target to preprocess a source file
+src/io/file_commands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/file_commands.cpp.i
+.PHONY : src/io/file_commands.cpp.i
+
+src/io/file_commands.s: src/io/file_commands.cpp.s
+.PHONY : src/io/file_commands.s
+
+# target to generate assembly for a file
+src/io/file_commands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/file_commands.cpp.s
+.PHONY : src/io/file_commands.cpp.s
+
+src/io/navigation_commands.obj: src/io/navigation_commands.cpp.obj
+.PHONY : src/io/navigation_commands.obj
+
+# target to build an object file
+src/io/navigation_commands.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.obj
+.PHONY : src/io/navigation_commands.cpp.obj
+
+src/io/navigation_commands.i: src/io/navigation_commands.cpp.i
+.PHONY : src/io/navigation_commands.i
+
+# target to preprocess a source file
+src/io/navigation_commands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.i
+.PHONY : src/io/navigation_commands.cpp.i
+
+src/io/navigation_commands.s: src/io/navigation_commands.cpp.s
+.PHONY : src/io/navigation_commands.s
+
+# target to generate assembly for a file
+src/io/navigation_commands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.s
+.PHONY : src/io/navigation_commands.cpp.s
+
 src/shell/command_executor.obj: src/shell/command_executor.cpp.obj
 .PHONY : src/shell/command_executor.obj
 
@@ -314,6 +386,15 @@ help:
 	@echo ... src/commands/set_color.obj
 	@echo ... src/commands/set_color.i
 	@echo ... src/commands/set_color.s
+	@echo ... src/io/directory_commands.obj
+	@echo ... src/io/directory_commands.i
+	@echo ... src/io/directory_commands.s
+	@echo ... src/io/file_commands.obj
+	@echo ... src/io/file_commands.i
+	@echo ... src/io/file_commands.s
+	@echo ... src/io/navigation_commands.obj
+	@echo ... src/io/navigation_commands.i
+	@echo ... src/io/navigation_commands.s
 	@echo ... src/shell/command_executor.obj
 	@echo ... src/shell/command_executor.i
 	@echo ... src/shell/command_executor.s
