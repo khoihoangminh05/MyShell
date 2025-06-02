@@ -1,6 +1,5 @@
-CMakeFiles/MyShell.dir/src/commands/exit_shell.cpp.obj: \
- D:\Projects\MyShell\src\commands\exit_shell.cpp \
- D:\Projects\MyShell\src\commands\exit_shell.h \
+background_programs/CMakeFiles/logger.dir/logger.cpp.obj: \
+ D:\Projects\MyShell\background_programs\logger.cpp \
  C:/msys64/ucrt64/include/c++/13.1.0/iostream \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -134,4 +133,22 @@ CMakeFiles/MyShell.dir/src/commands/exit_shell.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/basic_ios.tcc \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/13.1.0/istream \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/istream.tcc
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/istream.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/fstream \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/codecvt.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/fstream.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/chrono \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/chrono.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/ratio \
+ C:/msys64/ucrt64/include/c++/13.1.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/limits \
+ C:/msys64/ucrt64/include/c++/13.1.0/ctime \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/parse_numbers.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/thread \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/std_thread.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/unique_ptr.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/this_thread_sleep.h

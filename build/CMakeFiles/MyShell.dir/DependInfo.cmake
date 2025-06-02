@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/MyShell/main.cpp" "CMakeFiles/MyShell.dir/main.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/main.cpp.obj.d"
   "D:/Projects/MyShell/src/commands/help.cpp" "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj.d"
   "D:/Projects/MyShell/src/commands/set_color.cpp" "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj.d"
+  "D:/Projects/MyShell/src/process/process.cpp" "CMakeFiles/MyShell.dir/src/process/process.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/process/process.cpp.obj.d"
   "D:/Projects/MyShell/src/shell/command_executor.cpp" "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj.d"
   "D:/Projects/MyShell/src/shell/input_parser.cpp" "CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj.d"
   "D:/Projects/MyShell/src/shell/shell.cpp" "CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj.d"

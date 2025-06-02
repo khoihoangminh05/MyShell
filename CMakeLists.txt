@@ -10,6 +10,8 @@ file(GLOB_RECURSE SOURCES
     src/*.cpp
 )
 
+add_subdirectory(background_programs)
+
 # Include thư mục headers
 include_directories(src)
 

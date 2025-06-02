@@ -78,6 +78,14 @@ namespace sysutils {
         std::cout << "Computer Name: " << name << std::endl;
     }
 
+    void open_calculator() {
+        system("start calc");
+    }
+
+    void clear_screen() {
+        system("cls");
+    }
+
     void print_os_info() {
 #ifdef _WIN32
         std::cout << "OS: Windows" << std::endl;

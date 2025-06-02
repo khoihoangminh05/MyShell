@@ -116,11 +116,26 @@ CMakeFiles/MyShell.dir/src/commands/set_color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyShell.dir/src/commands/set_color.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\MyShell\src\commands\set_color.cpp -o CMakeFiles\MyShell.dir\src\commands\set_color.cpp.s
 
+CMakeFiles/MyShell.dir/src/process/process.cpp.obj: CMakeFiles/MyShell.dir/flags.make
+CMakeFiles/MyShell.dir/src/process/process.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
+CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/process/process.cpp
+CMakeFiles/MyShell.dir/src/process/process.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyShell.dir/src/process/process.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/process/process.cpp.obj -MF CMakeFiles\MyShell.dir\src\process\process.cpp.obj.d -o CMakeFiles\MyShell.dir\src\process\process.cpp.obj -c D:\Projects\MyShell\src\process\process.cpp
+
+CMakeFiles/MyShell.dir/src/process/process.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyShell.dir/src/process/process.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\MyShell\src\process\process.cpp > CMakeFiles\MyShell.dir\src\process\process.cpp.i
+
+CMakeFiles/MyShell.dir/src/process/process.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyShell.dir/src/process/process.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\MyShell\src\process\process.cpp -o CMakeFiles\MyShell.dir\src\process\process.cpp.s
+
 CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
 CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/src/shell/command_executor.cpp
 CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj -MF CMakeFiles\MyShell.dir\src\shell\command_executor.cpp.obj.d -o CMakeFiles\MyShell.dir\src\shell\command_executor.cpp.obj -c D:\Projects\MyShell\src\shell\command_executor.cpp
 
 CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.i: cmake_force
@@ -135,7 +150,7 @@ CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj: CMakeFiles/MyShell.dir/fl
 CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
 CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj: D:/Projects/MyShell/src/shell/input_parser.cpp
 CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj -MF CMakeFiles\MyShell.dir\src\shell\input_parser.cpp.obj.d -o CMakeFiles\MyShell.dir\src\shell\input_parser.cpp.obj -c D:\Projects\MyShell\src\shell\input_parser.cpp
 
 CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.i: cmake_force
@@ -150,7 +165,7 @@ CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj: CMakeFiles/MyShell.dir/flags.mak
 CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
 CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj: D:/Projects/MyShell/src/shell/shell.cpp
 CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj -MF CMakeFiles\MyShell.dir\src\shell\shell.cpp.obj.d -o CMakeFiles\MyShell.dir\src\shell\shell.cpp.obj -c D:\Projects\MyShell\src\shell\shell.cpp
 
 CMakeFiles/MyShell.dir/src/shell/shell.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj: CMakeFiles/MyShell.dir/fl
 CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
 CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj: D:/Projects/MyShell/src/utils/system_utils.cpp
 CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.obj -MF CMakeFiles\MyShell.dir\src\utils\system_utils.cpp.obj.d -o CMakeFiles\MyShell.dir\src\utils\system_utils.cpp.obj -c D:\Projects\MyShell\src\utils\system_utils.cpp
 
 CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.i: cmake_force
@@ -181,6 +196,7 @@ MyShell_OBJECTS = \
 "CMakeFiles/MyShell.dir/main.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj" \
+"CMakeFiles/MyShell.dir/src/process/process.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj" \
@@ -192,6 +208,7 @@ MyShell_EXTERNAL_OBJECTS =
 MyShell.exe: CMakeFiles/MyShell.dir/main.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/commands/help.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj
+MyShell.exe: CMakeFiles/MyShell.dir/src/process/process.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/shell/shell.cpp.obj
@@ -200,7 +217,7 @@ MyShell.exe: CMakeFiles/MyShell.dir/build.make
 MyShell.exe: CMakeFiles/MyShell.dir/linkLibs.rsp
 MyShell.exe: CMakeFiles/MyShell.dir/objects1.rsp
 MyShell.exe: CMakeFiles/MyShell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MyShell.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable MyShell.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyShell.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

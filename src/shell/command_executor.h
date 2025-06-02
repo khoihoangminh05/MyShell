@@ -3,5 +3,5 @@
 #include <string>
 
 namespace executor {
-    bool run(std::string command, const std::vector<std::string>& tokens);
+    bool run(bool is_background, std::string command, const std::vector<std::string>& tokens);
 }

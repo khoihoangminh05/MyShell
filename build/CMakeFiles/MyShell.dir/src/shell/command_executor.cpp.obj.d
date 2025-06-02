@@ -103,6 +103,7 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: \
  D:/Projects/MyShell/src/commands/help.h \
  D:/Projects/MyShell/src/commands/set_color.h \
  D:/Projects/MyShell/src/utils/system_utils.h \
+ D:/Projects/MyShell/src/process/process.h \
  C:/msys64/ucrt64/include/c++/13.1.0/iostream \
  C:/msys64/ucrt64/include/c++/13.1.0/ostream \
  C:/msys64/ucrt64/include/c++/13.1.0/ios \

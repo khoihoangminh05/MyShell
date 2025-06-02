@@ -128,6 +128,58 @@ MyShell/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/build
 .PHONY : MyShell/fast
 
+#=============================================================================
+# Target rules for targets named countdown
+
+# Build rule for target.
+countdown: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 countdown
+.PHONY : countdown
+
+# fast build rule for target.
+countdown/fast:
+	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/build
+.PHONY : countdown/fast
+
+#=============================================================================
+# Target rules for targets named tictactoe
+
+# Build rule for target.
+tictactoe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tictactoe
+.PHONY : tictactoe
+
+# fast build rule for target.
+tictactoe/fast:
+	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\tictactoe.dir\build.make background_programs/CMakeFiles/tictactoe.dir/build
+.PHONY : tictactoe/fast
+
+#=============================================================================
+# Target rules for targets named spinner
+
+# Build rule for target.
+spinner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 spinner
+.PHONY : spinner
+
+# fast build rule for target.
+spinner/fast:
+	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\spinner.dir\build.make background_programs/CMakeFiles/spinner.dir/build
+.PHONY : spinner/fast
+
+#=============================================================================
+# Target rules for targets named logger
+
+# Build rule for target.
+logger: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger
+.PHONY : logger
+
+# fast build rule for target.
+logger/fast:
+	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/build
+.PHONY : logger/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -199,6 +251,30 @@ src/commands/set_color.s: src/commands/set_color.cpp.s
 src/commands/set_color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/set_color.cpp.s
 .PHONY : src/commands/set_color.cpp.s
+
+src/process/process.obj: src/process/process.cpp.obj
+.PHONY : src/process/process.obj
+
+# target to build an object file
+src/process/process.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/process/process.cpp.obj
+.PHONY : src/process/process.cpp.obj
+
+src/process/process.i: src/process/process.cpp.i
+.PHONY : src/process/process.i
+
+# target to preprocess a source file
+src/process/process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/process/process.cpp.i
+.PHONY : src/process/process.cpp.i
+
+src/process/process.s: src/process/process.cpp.s
+.PHONY : src/process/process.s
+
+# target to generate assembly for a file
+src/process/process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/process/process.cpp.s
+.PHONY : src/process/process.cpp.s
 
 src/shell/command_executor.obj: src/shell/command_executor.cpp.obj
 .PHONY : src/shell/command_executor.obj
@@ -305,6 +381,10 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyShell
+	@echo ... countdown
+	@echo ... logger
+	@echo ... spinner
+	@echo ... tictactoe
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -314,6 +394,9 @@ help:
 	@echo ... src/commands/set_color.obj
 	@echo ... src/commands/set_color.i
 	@echo ... src/commands/set_color.s
+	@echo ... src/process/process.obj
+	@echo ... src/process/process.i
+	@echo ... src/process/process.s
 	@echo ... src/shell/command_executor.obj
 	@echo ... src/shell/command_executor.i
 	@echo ... src/shell/command_executor.s

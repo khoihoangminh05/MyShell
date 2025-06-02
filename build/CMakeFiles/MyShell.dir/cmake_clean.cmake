@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj.d"
   "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj"
   "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj.d"
+  "CMakeFiles/MyShell.dir/src/process/process.cpp.obj"
+  "CMakeFiles/MyShell.dir/src/process/process.cpp.obj.d"
   "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj"
   "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj.d"
   "CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj"

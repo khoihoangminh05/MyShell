@@ -9,4 +9,6 @@ namespace sysutils {
     void print_computer_name();
     void print_os_info();
     void print_all_system_info();
+    void open_calculator();
+    void clear_screen();
 }

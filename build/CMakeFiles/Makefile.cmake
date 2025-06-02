@@ -40,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake"
   "D:/Projects/MyShell/CMakeLists.txt"
+  "D:/Projects/MyShell/background_programs/CMakeLists.txt"
   "CMakeFiles/4.0.2/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.2/CMakeRCCompiler.cmake"
@@ -55,9 +56,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "background_programs/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MyShell.dir/DependInfo.cmake"
+  "background_programs/CMakeFiles/countdown.dir/DependInfo.cmake"
+  "background_programs/CMakeFiles/tictactoe.dir/DependInfo.cmake"
+  "background_programs/CMakeFiles/spinner.dir/DependInfo.cmake"
+  "background_programs/CMakeFiles/logger.dir/DependInfo.cmake"
   )
