@@ -55,6 +55,7 @@ namespace shell {
             std::string command = tokens.empty() ? "" : tokens[0];
             tokens.erase(tokens.begin()); // Remove command from tokens
 
+
             if (executor::run(is_background, command, tokens)) {
                 break;
             }

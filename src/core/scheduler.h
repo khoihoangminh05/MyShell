@@ -8,7 +8,7 @@ namespace scheduler {
 
 void executeCommand(const std::string &command, const std::vector<std::string> &args);
 
-void scheduleCommand(const std::vector<std::string> &args);
+bool scheduleCommand(const std::vector<std::string> &args);
 
 } // namespace scheduler
 

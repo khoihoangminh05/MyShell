@@ -254,29 +254,29 @@ src/commands/help.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/help.cpp.s
 .PHONY : src/commands/help.cpp.s
 
-src/commands/run_script.obj: src/commands/run_script.cpp.obj
-.PHONY : src/commands/run_script.obj
+src/commands/script.obj: src/commands/script.cpp.obj
+.PHONY : src/commands/script.obj
 
 # target to build an object file
-src/commands/run_script.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj
-.PHONY : src/commands/run_script.cpp.obj
+src/commands/script.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/script.cpp.obj
+.PHONY : src/commands/script.cpp.obj
 
-src/commands/run_script.i: src/commands/run_script.cpp.i
-.PHONY : src/commands/run_script.i
+src/commands/script.i: src/commands/script.cpp.i
+.PHONY : src/commands/script.i
 
 # target to preprocess a source file
-src/commands/run_script.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.i
-.PHONY : src/commands/run_script.cpp.i
+src/commands/script.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/script.cpp.i
+.PHONY : src/commands/script.cpp.i
 
-src/commands/run_script.s: src/commands/run_script.cpp.s
-.PHONY : src/commands/run_script.s
+src/commands/script.s: src/commands/script.cpp.s
+.PHONY : src/commands/script.s
 
 # target to generate assembly for a file
-src/commands/run_script.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.s
-.PHONY : src/commands/run_script.cpp.s
+src/commands/script.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/script.cpp.s
+.PHONY : src/commands/script.cpp.s
 
 src/commands/set_color.obj: src/commands/set_color.cpp.obj
 .PHONY : src/commands/set_color.obj
@@ -563,9 +563,9 @@ help:
 	@echo ... src/commands/help.obj
 	@echo ... src/commands/help.i
 	@echo ... src/commands/help.s
-	@echo ... src/commands/run_script.obj
-	@echo ... src/commands/run_script.i
-	@echo ... src/commands/run_script.s
+	@echo ... src/commands/script.obj
+	@echo ... src/commands/script.i
+	@echo ... src/commands/script.s
 	@echo ... src/commands/set_color.obj
 	@echo ... src/commands/set_color.i
 	@echo ... src/commands/set_color.s

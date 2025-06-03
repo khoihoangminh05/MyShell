@@ -1,7 +1,7 @@
 #include "command_executor.h"
 #include "../commands/help.h"
 #include "../commands/set_color.h"
-#include "../commands/run_script.h"
+#include "../commands/script.h"
 #include "../utils/system_utils.h"
 #include "../process/process.h"
 #include "../io/directory_commands.h"
@@ -28,7 +28,8 @@ namespace executor {
             sysutils::open_calculator();
         } 
         else if (command == "run") {
-            commands::run_script(tokens);
+            //std::cout<<"Running script: " << tokens[0] << std::endl;
+            commands::runScript(tokens);
         }
          // --- Lệnh tiện ích shell ---
         else if (command == "setcolor") {
@@ -98,6 +99,15 @@ namespace executor {
         }
         else if (command == "move_file") {
             io::move_file_command(tokens); // NEW
+        }
+        else if (command == "write_file") {
+            io::write_file(tokens); // NEW
+        } 
+        else if (command == "read_file") {
+            io::read_file(tokens); // NEW
+        }
+        else if (command == "delete_file") {
+            io::delete_file_command(tokens); // Đổi tên hàm
         }
         else if (command == "list_ext") {
             io::list_files_with_extension(tokens); // NEW
@@ -196,7 +206,7 @@ namespace executor {
                 environment::getEnv(tokens[0]);
             }
         } else if (command == "delay_command") {
-            scheduler::scheduleCommand(tokens);
+           return scheduler::scheduleCommand(tokens);
         }
         // ---- Lệnh quản lý tiến trình ---- 
         else if (command == "terminate") {

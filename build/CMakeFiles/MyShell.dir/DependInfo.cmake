@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/MyShell/main.cpp" "CMakeFiles/MyShell.dir/main.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/main.cpp.obj.d"
   "D:/Projects/MyShell/src/commands/help.cpp" "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj.d"
-  "D:/Projects/MyShell/src/commands/run_script.cpp" "CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj.d"
+  "D:/Projects/MyShell/src/commands/script.cpp" "CMakeFiles/MyShell.dir/src/commands/script.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/script.cpp.obj.d"
   "D:/Projects/MyShell/src/commands/set_color.cpp" "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj.d"
   "D:/Projects/MyShell/src/core/environment.cpp" "CMakeFiles/MyShell.dir/src/core/environment.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/core/environment.cpp.obj.d"
   "D:/Projects/MyShell/src/core/scheduler.cpp" "CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj.d"
