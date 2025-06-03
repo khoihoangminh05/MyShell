@@ -171,6 +171,34 @@ logger/fast:
 	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/build
 .PHONY : logger/fast
 
+# Convenience name for target.
+background_programs/CMakeFiles/duck.dir/rule:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/duck.dir/rule
+.PHONY : background_programs/CMakeFiles/duck.dir/rule
+
+# Convenience name for target.
+duck: background_programs/CMakeFiles/duck.dir/rule
+.PHONY : duck
+
+# fast build rule for target.
+duck/fast:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/build
+.PHONY : duck/fast
+
+# Convenience name for target.
+background_programs/CMakeFiles/heart.dir/rule:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/heart.dir/rule
+.PHONY : background_programs/CMakeFiles/heart.dir/rule
+
+# Convenience name for target.
+heart: background_programs/CMakeFiles/heart.dir/rule
+.PHONY : heart
+
+# fast build rule for target.
+heart/fast:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/build
+.PHONY : heart/fast
+
 countdown.obj: countdown.cpp.obj
 .PHONY : countdown.obj
 
@@ -194,6 +222,54 @@ countdown.s: countdown.cpp.s
 countdown.cpp.s:
 	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/countdown.cpp.s
 .PHONY : countdown.cpp.s
+
+duck.obj: duck.cpp.obj
+.PHONY : duck.obj
+
+# target to build an object file
+duck.cpp.obj:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/duck.cpp.obj
+.PHONY : duck.cpp.obj
+
+duck.i: duck.cpp.i
+.PHONY : duck.i
+
+# target to preprocess a source file
+duck.cpp.i:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/duck.cpp.i
+.PHONY : duck.cpp.i
+
+duck.s: duck.cpp.s
+.PHONY : duck.s
+
+# target to generate assembly for a file
+duck.cpp.s:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/duck.cpp.s
+.PHONY : duck.cpp.s
+
+heart.obj: heart.cpp.obj
+.PHONY : heart.obj
+
+# target to build an object file
+heart.cpp.obj:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/heart.cpp.obj
+.PHONY : heart.cpp.obj
+
+heart.i: heart.cpp.i
+.PHONY : heart.i
+
+# target to preprocess a source file
+heart.cpp.i:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/heart.cpp.i
+.PHONY : heart.cpp.i
+
+heart.s: heart.cpp.s
+.PHONY : heart.s
+
+# target to generate assembly for a file
+heart.cpp.s:
+	cd /d D:\Projects\MyShell\build && $(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/heart.cpp.s
+.PHONY : heart.cpp.s
 
 logger.obj: logger.cpp.obj
 .PHONY : logger.obj
@@ -276,12 +352,20 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... countdown
+	@echo ... duck
+	@echo ... heart
 	@echo ... logger
 	@echo ... spinner
 	@echo ... tictactoe
 	@echo ... countdown.obj
 	@echo ... countdown.i
 	@echo ... countdown.s
+	@echo ... duck.obj
+	@echo ... duck.i
+	@echo ... duck.s
+	@echo ... heart.obj
+	@echo ... heart.i
+	@echo ... heart.s
 	@echo ... logger.obj
 	@echo ... logger.i
 	@echo ... logger.s

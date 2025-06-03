@@ -114,7 +114,11 @@
     "fstream": "cpp",
     "semaphore": "cpp",
     "stop_token": "cpp",
-    "thread": "cpp"
+    "thread": "cpp",
+    "codecvt": "cpp",
+    "unordered_set": "cpp",
+    "condition_variable": "cpp",
+    "mutex": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

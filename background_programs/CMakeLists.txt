@@ -4,6 +4,8 @@ set(BACKGROUND_PROGRAMS
     tictactoe
     spinner
     logger
+    duck
+    heart
 )
 
 foreach(prog IN LISTS BACKGROUND_PROGRAMS)

@@ -15,6 +15,8 @@ namespace process {
 
     void signalHandler(int signal);
 
+    void cleanupDeadProcesses();
+
     void listProcesses();
     bool terminateProcess(int pid);
 
@@ -25,6 +27,9 @@ namespace process {
     void runTicTacToe(bool is_background);
     void runSpinner(bool is_background);
     void runLogger(bool is_background);
+
+    void runHeart(bool is_background);
+    void runDuck(bool is_background);
 
 #ifdef _WIN32
     bool suspendProcess(int pid);

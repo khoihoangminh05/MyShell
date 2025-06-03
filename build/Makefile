@@ -180,6 +180,32 @@ logger/fast:
 	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/build
 .PHONY : logger/fast
 
+#=============================================================================
+# Target rules for targets named duck
+
+# Build rule for target.
+duck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 duck
+.PHONY : duck
+
+# fast build rule for target.
+duck/fast:
+	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/build
+.PHONY : duck/fast
+
+#=============================================================================
+# Target rules for targets named heart
+
+# Build rule for target.
+heart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 heart
+.PHONY : heart
+
+# fast build rule for target.
+heart/fast:
+	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/build
+.PHONY : heart/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -228,6 +254,30 @@ src/commands/help.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/help.cpp.s
 .PHONY : src/commands/help.cpp.s
 
+src/commands/run_script.obj: src/commands/run_script.cpp.obj
+.PHONY : src/commands/run_script.obj
+
+# target to build an object file
+src/commands/run_script.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj
+.PHONY : src/commands/run_script.cpp.obj
+
+src/commands/run_script.i: src/commands/run_script.cpp.i
+.PHONY : src/commands/run_script.i
+
+# target to preprocess a source file
+src/commands/run_script.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.i
+.PHONY : src/commands/run_script.cpp.i
+
+src/commands/run_script.s: src/commands/run_script.cpp.s
+.PHONY : src/commands/run_script.s
+
+# target to generate assembly for a file
+src/commands/run_script.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.s
+.PHONY : src/commands/run_script.cpp.s
+
 src/commands/set_color.obj: src/commands/set_color.cpp.obj
 .PHONY : src/commands/set_color.obj
 
@@ -251,6 +301,126 @@ src/commands/set_color.s: src/commands/set_color.cpp.s
 src/commands/set_color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/set_color.cpp.s
 .PHONY : src/commands/set_color.cpp.s
+
+src/core/environment.obj: src/core/environment.cpp.obj
+.PHONY : src/core/environment.obj
+
+# target to build an object file
+src/core/environment.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/core/environment.cpp.obj
+.PHONY : src/core/environment.cpp.obj
+
+src/core/environment.i: src/core/environment.cpp.i
+.PHONY : src/core/environment.i
+
+# target to preprocess a source file
+src/core/environment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/core/environment.cpp.i
+.PHONY : src/core/environment.cpp.i
+
+src/core/environment.s: src/core/environment.cpp.s
+.PHONY : src/core/environment.s
+
+# target to generate assembly for a file
+src/core/environment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/core/environment.cpp.s
+.PHONY : src/core/environment.cpp.s
+
+src/core/scheduler.obj: src/core/scheduler.cpp.obj
+.PHONY : src/core/scheduler.obj
+
+# target to build an object file
+src/core/scheduler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj
+.PHONY : src/core/scheduler.cpp.obj
+
+src/core/scheduler.i: src/core/scheduler.cpp.i
+.PHONY : src/core/scheduler.i
+
+# target to preprocess a source file
+src/core/scheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/core/scheduler.cpp.i
+.PHONY : src/core/scheduler.cpp.i
+
+src/core/scheduler.s: src/core/scheduler.cpp.s
+.PHONY : src/core/scheduler.s
+
+# target to generate assembly for a file
+src/core/scheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/core/scheduler.cpp.s
+.PHONY : src/core/scheduler.cpp.s
+
+src/io/directory_commands.obj: src/io/directory_commands.cpp.obj
+.PHONY : src/io/directory_commands.obj
+
+# target to build an object file
+src/io/directory_commands.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.obj
+.PHONY : src/io/directory_commands.cpp.obj
+
+src/io/directory_commands.i: src/io/directory_commands.cpp.i
+.PHONY : src/io/directory_commands.i
+
+# target to preprocess a source file
+src/io/directory_commands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.i
+.PHONY : src/io/directory_commands.cpp.i
+
+src/io/directory_commands.s: src/io/directory_commands.cpp.s
+.PHONY : src/io/directory_commands.s
+
+# target to generate assembly for a file
+src/io/directory_commands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.s
+.PHONY : src/io/directory_commands.cpp.s
+
+src/io/file_commands.obj: src/io/file_commands.cpp.obj
+.PHONY : src/io/file_commands.obj
+
+# target to build an object file
+src/io/file_commands.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/file_commands.cpp.obj
+.PHONY : src/io/file_commands.cpp.obj
+
+src/io/file_commands.i: src/io/file_commands.cpp.i
+.PHONY : src/io/file_commands.i
+
+# target to preprocess a source file
+src/io/file_commands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/file_commands.cpp.i
+.PHONY : src/io/file_commands.cpp.i
+
+src/io/file_commands.s: src/io/file_commands.cpp.s
+.PHONY : src/io/file_commands.s
+
+# target to generate assembly for a file
+src/io/file_commands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/file_commands.cpp.s
+.PHONY : src/io/file_commands.cpp.s
+
+src/io/navigation_commands.obj: src/io/navigation_commands.cpp.obj
+.PHONY : src/io/navigation_commands.obj
+
+# target to build an object file
+src/io/navigation_commands.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.obj
+.PHONY : src/io/navigation_commands.cpp.obj
+
+src/io/navigation_commands.i: src/io/navigation_commands.cpp.i
+.PHONY : src/io/navigation_commands.i
+
+# target to preprocess a source file
+src/io/navigation_commands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.i
+.PHONY : src/io/navigation_commands.cpp.i
+
+src/io/navigation_commands.s: src/io/navigation_commands.cpp.s
+.PHONY : src/io/navigation_commands.s
+
+# target to generate assembly for a file
+src/io/navigation_commands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.s
+.PHONY : src/io/navigation_commands.cpp.s
 
 src/process/process.obj: src/process/process.cpp.obj
 .PHONY : src/process/process.obj
@@ -382,6 +552,8 @@ help:
 	@echo ... rebuild_cache
 	@echo ... MyShell
 	@echo ... countdown
+	@echo ... duck
+	@echo ... heart
 	@echo ... logger
 	@echo ... spinner
 	@echo ... tictactoe
@@ -391,9 +563,27 @@ help:
 	@echo ... src/commands/help.obj
 	@echo ... src/commands/help.i
 	@echo ... src/commands/help.s
+	@echo ... src/commands/run_script.obj
+	@echo ... src/commands/run_script.i
+	@echo ... src/commands/run_script.s
 	@echo ... src/commands/set_color.obj
 	@echo ... src/commands/set_color.i
 	@echo ... src/commands/set_color.s
+	@echo ... src/core/environment.obj
+	@echo ... src/core/environment.i
+	@echo ... src/core/environment.s
+	@echo ... src/core/scheduler.obj
+	@echo ... src/core/scheduler.i
+	@echo ... src/core/scheduler.s
+	@echo ... src/io/directory_commands.obj
+	@echo ... src/io/directory_commands.i
+	@echo ... src/io/directory_commands.s
+	@echo ... src/io/file_commands.obj
+	@echo ... src/io/file_commands.i
+	@echo ... src/io/file_commands.s
+	@echo ... src/io/navigation_commands.obj
+	@echo ... src/io/navigation_commands.i
+	@echo ... src/io/navigation_commands.s
 	@echo ... src/process/process.obj
 	@echo ... src/process/process.i
 	@echo ... src/process/process.s

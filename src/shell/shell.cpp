@@ -27,18 +27,31 @@ namespace shell {
     void start() {
         printBanner();
         std::string input;
+        std::string cur_color;
         while (true) {
-            setTextColor(10); // Light green prompt
-            std::cout << "MyShell >> ";
-            setTextColor(7); // Reset
-            std::getline(std::cin, input);
 
+             CONSOLE_SCREEN_BUFFER_INFO csbi;
+            GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+            int currentColor = csbi.wAttributes;
+
+        
+            setTextColor(10);
+            std::cout << "MyShell";
+
+            setTextColor(currentColor);
+            std::cout << ">> ";
+
+            std::getline(std::cin, input);
+       
             auto tokens = parser::tokenize(input);
             bool is_background = false;
-            if (!tokens.empty() && tokens[0] == "$") {
+
+            // Check if last token is '&' → background execution
+            if (!tokens.empty() && tokens.back() == "&") {
                 is_background = true;
-                tokens.erase(tokens.begin()); // Remove '$' from tokens
+                tokens.pop_back(); // Remove '&' from tokens
             }
+
             std::string command = tokens.empty() ? "" : tokens[0];
             tokens.erase(tokens.begin()); // Remove command from tokens
 

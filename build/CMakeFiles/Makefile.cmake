@@ -66,4 +66,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "background_programs/CMakeFiles/tictactoe.dir/DependInfo.cmake"
   "background_programs/CMakeFiles/spinner.dir/DependInfo.cmake"
   "background_programs/CMakeFiles/logger.dir/DependInfo.cmake"
+  "background_programs/CMakeFiles/duck.dir/DependInfo.cmake"
+  "background_programs/CMakeFiles/heart.dir/DependInfo.cmake"
   )

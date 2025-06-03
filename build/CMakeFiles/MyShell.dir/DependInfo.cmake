@@ -10,7 +10,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/MyShell/main.cpp" "CMakeFiles/MyShell.dir/main.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/main.cpp.obj.d"
   "D:/Projects/MyShell/src/commands/help.cpp" "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj.d"
+  "D:/Projects/MyShell/src/commands/run_script.cpp" "CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj.d"
   "D:/Projects/MyShell/src/commands/set_color.cpp" "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj.d"
+  "D:/Projects/MyShell/src/core/environment.cpp" "CMakeFiles/MyShell.dir/src/core/environment.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/core/environment.cpp.obj.d"
+  "D:/Projects/MyShell/src/core/scheduler.cpp" "CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj.d"
+  "D:/Projects/MyShell/src/io/directory_commands.cpp" "CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/io/directory_commands.cpp.obj.d"
+  "D:/Projects/MyShell/src/io/file_commands.cpp" "CMakeFiles/MyShell.dir/src/io/file_commands.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/io/file_commands.cpp.obj.d"
+  "D:/Projects/MyShell/src/io/navigation_commands.cpp" "CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/io/navigation_commands.cpp.obj.d"
   "D:/Projects/MyShell/src/process/process.cpp" "CMakeFiles/MyShell.dir/src/process/process.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/process/process.cpp.obj.d"
   "D:/Projects/MyShell/src/shell/command_executor.cpp" "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj.d"
   "D:/Projects/MyShell/src/shell/input_parser.cpp" "CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj" "gcc" "CMakeFiles/MyShell.dir/src/shell/input_parser.cpp.obj.d"
