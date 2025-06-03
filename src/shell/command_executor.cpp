@@ -3,6 +3,8 @@
 #include "../commands/set_color.h"
 #include "../utils/system_utils.h"
 #include "../process/process.h"
+#include "../core/environment.h"
+#include "../core/scheduler.h"
 #include <iostream>
 
 namespace executor {
@@ -130,9 +132,74 @@ namespace executor {
                 command += " " + arg;
             }
         
-        process::startBackgroundProcess(command, true); // Thêm dấu nhắc tạm dừng
+            process::startBackgroundProcess(command, true); // Thêm dấu nhắc tạm dừng
             return false; // Continue running the shell
-    } else {
+        }  
+        else if (command == "add_path") {
+            // Thêm đường dẫn vào PATH
+            if (tokens.size() != 1) {
+                std::cout << "Usage: add_path <directory_path>\n";
+            } else {
+                environment::addToPath(tokens[0]);
+            }
+        } else if (command == "remove_path"){
+            // Xoá đường dẫn khỏi PATH
+            if (tokens.size() != 1) {
+                std::cout << "Usage: add_path <directory_path>\n";
+            } else {
+                environment::removeFromPath(tokens[0]);
+            }
+        } else if (command == "print_env") {
+            // In ra giá trị biến môi trường
+             if (tokens.size() != 1) {
+                std::cout << "No variable provided";
+            } else {
+                environment::printEnv(tokens[0]);
+            }
+        } else if (command == "set_env") {
+            if (tokens.size() != 2) {
+                std::cout << "Usage: Enter the variable name and value\n";
+            } else {
+                environment::setEnv(tokens[1], tokens[0]);
+            }
+        } else if (command == "unset_env") {
+             if (tokens.size() != 1) {
+                std::cout << "Usage: Enter the variable name\n";
+            } else {
+                environment::unsetEnv(tokens[0]);
+            }
+        } else if (command == "is_in_path") {
+            if (tokens.size() != 1) {
+                std::cout << "Usage: Enter the variable name\n";
+            } else {
+                std::cout << environment::isInPath(tokens[0]) << "\n";
+            }
+        } 
+        // else if (command == "list_env") {
+        //     environment::listAllEnv();
+        // } else if (command == "save_env") {
+        //     if (tokens.size() != 1) {
+        //         std::cout<<"Usage: Enter file name\n";
+        //     } else {
+        //         environment::saveEnvToFile(tokens[0]);
+        //     }
+        // } else if (command == "load_env") {
+        //     if (tokens.size() != 1) {
+        //         std::cout<<"Usage: Enter file name\n";
+        //     } else {
+        //         environment::loadEnvFromFile(tokens[0]);
+        //     }
+        // } 
+        else if (command == "get_env") {
+            if (tokens.size() != 1) {
+                std::cout<<"Usage: Enter variable name\n";
+            } else {
+                environment::getEnv(tokens[0]);
+            }
+        } else if (command == "delay_command") {
+            scheduler::scheduleCommand(tokens);
+        }
+        else {
             // Xử lý lệnh bình thường
             if (tokens.empty()) {
                 std::cout << "No command provided.\n";

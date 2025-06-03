@@ -15,6 +15,12 @@ namespace commands {
     std::cout << "  sysinfo          Show system information\n";
     std::cout << "  addpath <path>   Add path to PATH\n";
     std::cout << "  dir              List current directory contents\n";
+    std::cout << "  print_env        Return environment variable value\n";
+    std::cout << "  remove_path      Remove directory from PATH\n";
+    std::cout << "  set_env          Create a new environment variable\n";
+    std::cout << "  unset_env        Delete an existing environment variable\n";
+    std::cout << "  is_in_path       Check if a path exists in the PATH environment variable\n";
+    std::cout << "  load_env         Load environment variables from file\n";
     std::cout << "\nShell usage:\n";
     std::cout << "  - Use normal Windows commands like `ping`, `notepad`, etc.\n";
     std::cout << "  - Prefix command with `$` to run in background (e.g., $ ping google.com)\n";
