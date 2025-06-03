@@ -1,4 +1,4 @@
-# 🐚 MyShell — Simple Yet Powerful Windows Shell
+# 🐚 MyShell — Bài tập lớn Nguyên lý Hệ điều hành
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=450&lines=A+custom+shell+in+C%2B%2B+for+Windows!">
