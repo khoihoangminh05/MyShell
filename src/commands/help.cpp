@@ -43,6 +43,8 @@ void help() {
     // 4. File management
     print_section_header("File Commands");
     std::cout << "  touch <file>            Create file\n";
+    std::cout << "  write_file [] <file>    Write to file\n";
+    std::cout << "  read_file <file>        Read file content\n";
     std::cout << "  rm <file>               Delete file\n";
     std::cout << "  rename_file <old> <new> Rename file\n";
     std::cout << "  copy_file <src> <dest>  Copy file\n";
@@ -85,11 +87,11 @@ void help() {
     std::cout << "  resume <pid>            Resume a suspended process\n";
 
     // 8. Fun & Utilities
-    print_section_header("Fun & Utilities");
-    std::cout << "  countdown [n]           Run countdown timer (default 10s)\n";
-    std::cout << "  spinner                 Run loading spinner animation\n";
-    std::cout << "  tictactoe               Play Tic Tac Toe game\n";
-    std::cout << "  logger                  Run background logger\n";
+    // print_section_header("Fun & Utilities");
+    // std::cout << "  countdown [n]           Run countdown timer (default 10s)\n";
+    // std::cout << "  spinner                 Run loading spinner animation\n";
+    // std::cout << "  tictactoe               Play Tic Tac Toe game\n";
+    // std::cout << "  logger                  Run background logger\n";
 
     // 9. Starting External Commands
     print_section_header("Starting External Commands");

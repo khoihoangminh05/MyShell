@@ -1,7 +1,7 @@
 #include "command_executor.h"
 #include "../commands/help.h"
 #include "../commands/set_color.h"
-#include "../commands/script.h"
+#include "../commands/run_script.h"
 #include "../utils/system_utils.h"
 #include "../process/process.h"
 #include "../io/directory_commands.h"
@@ -29,7 +29,7 @@ namespace executor {
         } 
         else if (command == "run") {
             //std::cout<<"Running script: " << tokens[0] << std::endl;
-            commands::runScript(tokens);
+            commands::run_script(tokens);
         }
          // --- Lệnh tiện ích shell ---
         else if (command == "setcolor") {
@@ -184,21 +184,7 @@ namespace executor {
                 std::cout << environment::isInPath(tokens[0]) << "\n";
             }
         } 
-        // else if (command == "list_env") {
-        //     environment::listAllEnv();
-        // } else if (command == "save_env") {
-        //     if (tokens.size() != 1) {
-        //         std::cout<<"Usage: Enter file name\n";
-        //     } else {
-        //         environment::saveEnvToFile(tokens[0]);
-        //     }
-        // } else if (command == "load_env") {
-        //     if (tokens.size() != 1) {
-        //         std::cout<<"Usage: Enter file name\n";
-        //     } else {
-        //         environment::loadEnvFromFile(tokens[0]);
-        //     }
-        // } 
+       
         else if (command == "get_env") {
             if (tokens.size() != 1) {
                 std::cout<<"Usage: Enter variable name\n";
@@ -248,43 +234,6 @@ namespace executor {
         else if (command == "list_proc") {
             process::listProcesses();
         } 
-        else if(command == "child") {
-            // Chạy tiến trình con để kiểm tra chức năng
-            process::runChild(is_background, tokens.empty() ? "" : tokens[0]);
-        }
-        else if(command == "countdown") {
-            // Chạy chương trình đếm ngược
-            int seconds = 10; // Mặc định là 10 giây
-            if (!tokens.empty()) {
-                try {
-                    seconds = std::stoi(tokens[0]);
-                } catch (const std::exception& e) {
-                    std::cout << "Invalid argument for countdown: " << tokens[0] << "\n";
-                    return false; // Continue running the shell
-                }
-            }
-            process::runCountdown(is_background, seconds);
-        } 
-        else if (command == "tictactoe") {
-            // Chạy trò chơi Tic Tac Toe
-            process::runTicTacToe(is_background);
-        } 
-        else if (command == "spinner") {
-            // Chạy chương trình spinner
-            process::runSpinner(is_background);
-        } 
-        else if (command == "logger") {
-            // Chạy chương trình ghi log
-            process::runLogger(is_background);
-        } 
-        else if (command == "heart") {
-            // Chạy chương trình vẽ trái tim
-            process::runHeart(is_background);
-        } 
-        else if (command == "duck") {
-            // Chạy chương trình vẽ con vịt
-            process::runDuck(is_background);
-        }
         else if (command == "start") {
           if (tokens.empty()) {
               std::cout << "Usage: start <command> [&]\n";

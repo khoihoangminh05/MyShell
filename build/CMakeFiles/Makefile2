@@ -63,56 +63,56 @@ CMAKE_BINARY_DIR = D:\Projects\MyShell\build
 
 # The main recursive "all" target.
 all: CMakeFiles/MyShell.dir/all
-all: background_programs/all
+all: programs/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/MyShell.dir/codegen
-codegen: background_programs/codegen
+codegen: programs/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: background_programs/preinstall
+preinstall: programs/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/MyShell.dir/clean
-clean: background_programs/clean
+clean: programs/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory background_programs
+# Directory level rules for directory programs
 
 # Recursive "all" directory target.
-background_programs/all: background_programs/CMakeFiles/countdown.dir/all
-background_programs/all: background_programs/CMakeFiles/tictactoe.dir/all
-background_programs/all: background_programs/CMakeFiles/spinner.dir/all
-background_programs/all: background_programs/CMakeFiles/logger.dir/all
-background_programs/all: background_programs/CMakeFiles/duck.dir/all
-background_programs/all: background_programs/CMakeFiles/heart.dir/all
-.PHONY : background_programs/all
+programs/all: programs/CMakeFiles/countdown.dir/all
+programs/all: programs/CMakeFiles/tictactoe.dir/all
+programs/all: programs/CMakeFiles/spinner.dir/all
+programs/all: programs/CMakeFiles/logger.dir/all
+programs/all: programs/CMakeFiles/duck.dir/all
+programs/all: programs/CMakeFiles/heart.dir/all
+.PHONY : programs/all
 
 # Recursive "codegen" directory target.
-background_programs/codegen: background_programs/CMakeFiles/countdown.dir/codegen
-background_programs/codegen: background_programs/CMakeFiles/tictactoe.dir/codegen
-background_programs/codegen: background_programs/CMakeFiles/spinner.dir/codegen
-background_programs/codegen: background_programs/CMakeFiles/logger.dir/codegen
-background_programs/codegen: background_programs/CMakeFiles/duck.dir/codegen
-background_programs/codegen: background_programs/CMakeFiles/heart.dir/codegen
-.PHONY : background_programs/codegen
+programs/codegen: programs/CMakeFiles/countdown.dir/codegen
+programs/codegen: programs/CMakeFiles/tictactoe.dir/codegen
+programs/codegen: programs/CMakeFiles/spinner.dir/codegen
+programs/codegen: programs/CMakeFiles/logger.dir/codegen
+programs/codegen: programs/CMakeFiles/duck.dir/codegen
+programs/codegen: programs/CMakeFiles/heart.dir/codegen
+.PHONY : programs/codegen
 
 # Recursive "preinstall" directory target.
-background_programs/preinstall:
-.PHONY : background_programs/preinstall
+programs/preinstall:
+.PHONY : programs/preinstall
 
 # Recursive "clean" directory target.
-background_programs/clean: background_programs/CMakeFiles/countdown.dir/clean
-background_programs/clean: background_programs/CMakeFiles/tictactoe.dir/clean
-background_programs/clean: background_programs/CMakeFiles/spinner.dir/clean
-background_programs/clean: background_programs/CMakeFiles/logger.dir/clean
-background_programs/clean: background_programs/CMakeFiles/duck.dir/clean
-background_programs/clean: background_programs/CMakeFiles/heart.dir/clean
-.PHONY : background_programs/clean
+programs/clean: programs/CMakeFiles/countdown.dir/clean
+programs/clean: programs/CMakeFiles/tictactoe.dir/clean
+programs/clean: programs/CMakeFiles/spinner.dir/clean
+programs/clean: programs/CMakeFiles/logger.dir/clean
+programs/clean: programs/CMakeFiles/duck.dir/clean
+programs/clean: programs/CMakeFiles/heart.dir/clean
+.PHONY : programs/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/MyShell.dir
@@ -147,196 +147,196 @@ CMakeFiles/MyShell.dir/clean:
 .PHONY : CMakeFiles/MyShell.dir/clean
 
 #=============================================================================
-# Target rules for target background_programs/CMakeFiles/countdown.dir
+# Target rules for target programs/CMakeFiles/countdown.dir
 
 # All Build rule for target.
-background_programs/CMakeFiles/countdown.dir/all:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/depend
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/build
+programs/CMakeFiles/countdown.dir/all:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\countdown.dir\build.make programs/CMakeFiles/countdown.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\countdown.dir\build.make programs/CMakeFiles/countdown.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=16,17 "Built target countdown"
-.PHONY : background_programs/CMakeFiles/countdown.dir/all
+.PHONY : programs/CMakeFiles/countdown.dir/all
 
 # Build rule for subdir invocation for target.
-background_programs/CMakeFiles/countdown.dir/rule: cmake_check_build_system
+programs/CMakeFiles/countdown.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/countdown.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 programs/CMakeFiles/countdown.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 0
-.PHONY : background_programs/CMakeFiles/countdown.dir/rule
+.PHONY : programs/CMakeFiles/countdown.dir/rule
 
 # Convenience name for target.
-countdown: background_programs/CMakeFiles/countdown.dir/rule
+countdown: programs/CMakeFiles/countdown.dir/rule
 .PHONY : countdown
 
 # codegen rule for target.
-background_programs/CMakeFiles/countdown.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/codegen
+programs/CMakeFiles/countdown.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\countdown.dir\build.make programs/CMakeFiles/countdown.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=16,17 "Finished codegen for target countdown"
-.PHONY : background_programs/CMakeFiles/countdown.dir/codegen
+.PHONY : programs/CMakeFiles/countdown.dir/codegen
 
 # clean rule for target.
-background_programs/CMakeFiles/countdown.dir/clean:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/clean
-.PHONY : background_programs/CMakeFiles/countdown.dir/clean
+programs/CMakeFiles/countdown.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\countdown.dir\build.make programs/CMakeFiles/countdown.dir/clean
+.PHONY : programs/CMakeFiles/countdown.dir/clean
 
 #=============================================================================
-# Target rules for target background_programs/CMakeFiles/tictactoe.dir
+# Target rules for target programs/CMakeFiles/tictactoe.dir
 
 # All Build rule for target.
-background_programs/CMakeFiles/tictactoe.dir/all:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\tictactoe.dir\build.make background_programs/CMakeFiles/tictactoe.dir/depend
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\tictactoe.dir\build.make background_programs/CMakeFiles/tictactoe.dir/build
+programs/CMakeFiles/tictactoe.dir/all:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\tictactoe.dir\build.make programs/CMakeFiles/tictactoe.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\tictactoe.dir\build.make programs/CMakeFiles/tictactoe.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=26,27 "Built target tictactoe"
-.PHONY : background_programs/CMakeFiles/tictactoe.dir/all
+.PHONY : programs/CMakeFiles/tictactoe.dir/all
 
 # Build rule for subdir invocation for target.
-background_programs/CMakeFiles/tictactoe.dir/rule: cmake_check_build_system
+programs/CMakeFiles/tictactoe.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/tictactoe.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 programs/CMakeFiles/tictactoe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 0
-.PHONY : background_programs/CMakeFiles/tictactoe.dir/rule
+.PHONY : programs/CMakeFiles/tictactoe.dir/rule
 
 # Convenience name for target.
-tictactoe: background_programs/CMakeFiles/tictactoe.dir/rule
+tictactoe: programs/CMakeFiles/tictactoe.dir/rule
 .PHONY : tictactoe
 
 # codegen rule for target.
-background_programs/CMakeFiles/tictactoe.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\tictactoe.dir\build.make background_programs/CMakeFiles/tictactoe.dir/codegen
+programs/CMakeFiles/tictactoe.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\tictactoe.dir\build.make programs/CMakeFiles/tictactoe.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=26,27 "Finished codegen for target tictactoe"
-.PHONY : background_programs/CMakeFiles/tictactoe.dir/codegen
+.PHONY : programs/CMakeFiles/tictactoe.dir/codegen
 
 # clean rule for target.
-background_programs/CMakeFiles/tictactoe.dir/clean:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\tictactoe.dir\build.make background_programs/CMakeFiles/tictactoe.dir/clean
-.PHONY : background_programs/CMakeFiles/tictactoe.dir/clean
+programs/CMakeFiles/tictactoe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\tictactoe.dir\build.make programs/CMakeFiles/tictactoe.dir/clean
+.PHONY : programs/CMakeFiles/tictactoe.dir/clean
 
 #=============================================================================
-# Target rules for target background_programs/CMakeFiles/spinner.dir
+# Target rules for target programs/CMakeFiles/spinner.dir
 
 # All Build rule for target.
-background_programs/CMakeFiles/spinner.dir/all:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\spinner.dir\build.make background_programs/CMakeFiles/spinner.dir/depend
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\spinner.dir\build.make background_programs/CMakeFiles/spinner.dir/build
+programs/CMakeFiles/spinner.dir/all:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\spinner.dir\build.make programs/CMakeFiles/spinner.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\spinner.dir\build.make programs/CMakeFiles/spinner.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=24,25 "Built target spinner"
-.PHONY : background_programs/CMakeFiles/spinner.dir/all
+.PHONY : programs/CMakeFiles/spinner.dir/all
 
 # Build rule for subdir invocation for target.
-background_programs/CMakeFiles/spinner.dir/rule: cmake_check_build_system
+programs/CMakeFiles/spinner.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/spinner.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 programs/CMakeFiles/spinner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 0
-.PHONY : background_programs/CMakeFiles/spinner.dir/rule
+.PHONY : programs/CMakeFiles/spinner.dir/rule
 
 # Convenience name for target.
-spinner: background_programs/CMakeFiles/spinner.dir/rule
+spinner: programs/CMakeFiles/spinner.dir/rule
 .PHONY : spinner
 
 # codegen rule for target.
-background_programs/CMakeFiles/spinner.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\spinner.dir\build.make background_programs/CMakeFiles/spinner.dir/codegen
+programs/CMakeFiles/spinner.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\spinner.dir\build.make programs/CMakeFiles/spinner.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=24,25 "Finished codegen for target spinner"
-.PHONY : background_programs/CMakeFiles/spinner.dir/codegen
+.PHONY : programs/CMakeFiles/spinner.dir/codegen
 
 # clean rule for target.
-background_programs/CMakeFiles/spinner.dir/clean:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\spinner.dir\build.make background_programs/CMakeFiles/spinner.dir/clean
-.PHONY : background_programs/CMakeFiles/spinner.dir/clean
+programs/CMakeFiles/spinner.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\spinner.dir\build.make programs/CMakeFiles/spinner.dir/clean
+.PHONY : programs/CMakeFiles/spinner.dir/clean
 
 #=============================================================================
-# Target rules for target background_programs/CMakeFiles/logger.dir
+# Target rules for target programs/CMakeFiles/logger.dir
 
 # All Build rule for target.
-background_programs/CMakeFiles/logger.dir/all:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/depend
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/build
+programs/CMakeFiles/logger.dir/all:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\logger.dir\build.make programs/CMakeFiles/logger.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\logger.dir\build.make programs/CMakeFiles/logger.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=22,23 "Built target logger"
-.PHONY : background_programs/CMakeFiles/logger.dir/all
+.PHONY : programs/CMakeFiles/logger.dir/all
 
 # Build rule for subdir invocation for target.
-background_programs/CMakeFiles/logger.dir/rule: cmake_check_build_system
+programs/CMakeFiles/logger.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/logger.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 programs/CMakeFiles/logger.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 0
-.PHONY : background_programs/CMakeFiles/logger.dir/rule
+.PHONY : programs/CMakeFiles/logger.dir/rule
 
 # Convenience name for target.
-logger: background_programs/CMakeFiles/logger.dir/rule
+logger: programs/CMakeFiles/logger.dir/rule
 .PHONY : logger
 
 # codegen rule for target.
-background_programs/CMakeFiles/logger.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/codegen
+programs/CMakeFiles/logger.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\logger.dir\build.make programs/CMakeFiles/logger.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=22,23 "Finished codegen for target logger"
-.PHONY : background_programs/CMakeFiles/logger.dir/codegen
+.PHONY : programs/CMakeFiles/logger.dir/codegen
 
 # clean rule for target.
-background_programs/CMakeFiles/logger.dir/clean:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/clean
-.PHONY : background_programs/CMakeFiles/logger.dir/clean
+programs/CMakeFiles/logger.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\logger.dir\build.make programs/CMakeFiles/logger.dir/clean
+.PHONY : programs/CMakeFiles/logger.dir/clean
 
 #=============================================================================
-# Target rules for target background_programs/CMakeFiles/duck.dir
+# Target rules for target programs/CMakeFiles/duck.dir
 
 # All Build rule for target.
-background_programs/CMakeFiles/duck.dir/all:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/depend
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/build
+programs/CMakeFiles/duck.dir/all:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\duck.dir\build.make programs/CMakeFiles/duck.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\duck.dir\build.make programs/CMakeFiles/duck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=18,19 "Built target duck"
-.PHONY : background_programs/CMakeFiles/duck.dir/all
+.PHONY : programs/CMakeFiles/duck.dir/all
 
 # Build rule for subdir invocation for target.
-background_programs/CMakeFiles/duck.dir/rule: cmake_check_build_system
+programs/CMakeFiles/duck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/duck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 programs/CMakeFiles/duck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 0
-.PHONY : background_programs/CMakeFiles/duck.dir/rule
+.PHONY : programs/CMakeFiles/duck.dir/rule
 
 # Convenience name for target.
-duck: background_programs/CMakeFiles/duck.dir/rule
+duck: programs/CMakeFiles/duck.dir/rule
 .PHONY : duck
 
 # codegen rule for target.
-background_programs/CMakeFiles/duck.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/codegen
+programs/CMakeFiles/duck.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\duck.dir\build.make programs/CMakeFiles/duck.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=18,19 "Finished codegen for target duck"
-.PHONY : background_programs/CMakeFiles/duck.dir/codegen
+.PHONY : programs/CMakeFiles/duck.dir/codegen
 
 # clean rule for target.
-background_programs/CMakeFiles/duck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/clean
-.PHONY : background_programs/CMakeFiles/duck.dir/clean
+programs/CMakeFiles/duck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\duck.dir\build.make programs/CMakeFiles/duck.dir/clean
+.PHONY : programs/CMakeFiles/duck.dir/clean
 
 #=============================================================================
-# Target rules for target background_programs/CMakeFiles/heart.dir
+# Target rules for target programs/CMakeFiles/heart.dir
 
 # All Build rule for target.
-background_programs/CMakeFiles/heart.dir/all:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/depend
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/build
+programs/CMakeFiles/heart.dir/all:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\heart.dir\build.make programs/CMakeFiles/heart.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\heart.dir\build.make programs/CMakeFiles/heart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=20,21 "Built target heart"
-.PHONY : background_programs/CMakeFiles/heart.dir/all
+.PHONY : programs/CMakeFiles/heart.dir/all
 
 # Build rule for subdir invocation for target.
-background_programs/CMakeFiles/heart.dir/rule: cmake_check_build_system
+programs/CMakeFiles/heart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 background_programs/CMakeFiles/heart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 programs/CMakeFiles/heart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\MyShell\build\CMakeFiles 0
-.PHONY : background_programs/CMakeFiles/heart.dir/rule
+.PHONY : programs/CMakeFiles/heart.dir/rule
 
 # Convenience name for target.
-heart: background_programs/CMakeFiles/heart.dir/rule
+heart: programs/CMakeFiles/heart.dir/rule
 .PHONY : heart
 
 # codegen rule for target.
-background_programs/CMakeFiles/heart.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/codegen
+programs/CMakeFiles/heart.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\heart.dir\build.make programs/CMakeFiles/heart.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=20,21 "Finished codegen for target heart"
-.PHONY : background_programs/CMakeFiles/heart.dir/codegen
+.PHONY : programs/CMakeFiles/heart.dir/codegen
 
 # clean rule for target.
-background_programs/CMakeFiles/heart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/clean
-.PHONY : background_programs/CMakeFiles/heart.dir/clean
+programs/CMakeFiles/heart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\heart.dir\build.make programs/CMakeFiles/heart.dir/clean
+.PHONY : programs/CMakeFiles/heart.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

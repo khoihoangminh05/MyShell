@@ -101,20 +101,20 @@ CMakeFiles/MyShell.dir/src/commands/help.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyShell.dir/src/commands/help.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\MyShell\src\commands\help.cpp -o CMakeFiles\MyShell.dir\src\commands\help.cpp.s
 
-CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: CMakeFiles/MyShell.dir/flags.make
-CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
-CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: D:/Projects/MyShell/src/commands/script.cpp
-CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyShell.dir/src/commands/script.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/commands/script.cpp.obj -MF CMakeFiles\MyShell.dir\src\commands\script.cpp.obj.d -o CMakeFiles\MyShell.dir\src\commands\script.cpp.obj -c D:\Projects\MyShell\src\commands\script.cpp
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj: CMakeFiles/MyShell.dir/flags.make
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj: D:/Projects/MyShell/src/commands/run_script.cpp
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj: CMakeFiles/MyShell.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\MyShell\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj -MF CMakeFiles\MyShell.dir\src\commands\run_script.cpp.obj.d -o CMakeFiles\MyShell.dir\src\commands\run_script.cpp.obj -c D:\Projects\MyShell\src\commands\run_script.cpp
 
-CMakeFiles/MyShell.dir/src/commands/script.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyShell.dir/src/commands/script.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\MyShell\src\commands\script.cpp > CMakeFiles\MyShell.dir\src\commands\script.cpp.i
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyShell.dir/src/commands/run_script.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\MyShell\src\commands\run_script.cpp > CMakeFiles\MyShell.dir\src\commands\run_script.cpp.i
 
-CMakeFiles/MyShell.dir/src/commands/script.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyShell.dir/src/commands/script.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\MyShell\src\commands\script.cpp -o CMakeFiles\MyShell.dir\src\commands\script.cpp.s
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyShell.dir/src/commands/run_script.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\MyShell\src\commands\run_script.cpp -o CMakeFiles\MyShell.dir\src\commands\run_script.cpp.s
 
 CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj: CMakeFiles/MyShell.dir/includes_CXX.rsp
@@ -285,7 +285,7 @@ CMakeFiles/MyShell.dir/src/utils/system_utils.cpp.s: cmake_force
 MyShell_OBJECTS = \
 "CMakeFiles/MyShell.dir/main.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/commands/help.cpp.obj" \
-"CMakeFiles/MyShell.dir/src/commands/script.cpp.obj" \
+"CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/core/environment.cpp.obj" \
 "CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj" \
@@ -303,7 +303,7 @@ MyShell_EXTERNAL_OBJECTS =
 
 MyShell.exe: CMakeFiles/MyShell.dir/main.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/commands/help.cpp.obj
-MyShell.exe: CMakeFiles/MyShell.dir/src/commands/script.cpp.obj
+MyShell.exe: CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/core/environment.cpp.obj
 MyShell.exe: CMakeFiles/MyShell.dir/src/core/scheduler.cpp.obj

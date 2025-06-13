@@ -9,6 +9,7 @@
 #include <windows.h>
 #include <tlhelp32.h>
 #include <algorithm>
+#include <iomanip>
 
 namespace process {
 
@@ -37,7 +38,27 @@ struct ProcessInfo {
     int pid;
     std::string command;
     ProcessState state;
+    std::chrono::system_clock::time_point startTime;
+    
+    ProcessInfo(int p, const std::string& cmd, ProcessState s) 
+        : pid(p), command(cmd), state(s), startTime(std::chrono::system_clock::now()) {}
+   
 };
+
+std::string getRunningTime(const std::chrono::system_clock::time_point& start) {
+    auto now = std::chrono::system_clock::now();
+    auto duration = now - start;
+    auto hours = std::chrono::duration_cast<std::chrono::hours>(duration);
+    auto minutes = std::chrono::duration_cast<std::chrono::minutes>(duration % std::chrono::hours(1));
+    auto seconds = std::chrono::duration_cast<std::chrono::seconds>(duration % std::chrono::minutes(1));
+    
+    std::ostringstream oss;
+    oss << std::setfill('0') 
+        << std::setw(2) << hours.count() << ":"
+        << std::setw(2) << minutes.count() << ":"
+        << std::setw(2) << seconds.count();
+    return oss.str();
+}
 
 static std::vector<ProcessInfo> g_processes;
 
@@ -58,14 +79,60 @@ void cleanupDeadProcesses() {
 
 void listProcesses() {
     cleanupDeadProcesses();
-    std::cout << "=== Running Processes ===\n";
+    
+    // Calculate column widths
+    const int pidWidth = 10;
+    const int cmdWidth = 40;
+    const int stateWidth = 15;
+    const int timeWidth = 15;
+    
+    // Border characters
+    const char vertical = '|';
+    const char horizontal = '-';
+    const char cross = '+';
+    
+    // Create horizontal line
+    auto printHorizontalLine = [&]() {
+        std::cout << cross 
+                  << std::setfill(horizontal) << std::setw(pidWidth) << "" << cross
+                  << std::setw(cmdWidth) << "" << cross
+                  << std::setw(stateWidth) << "" << cross
+                  << std::setw(timeWidth) << "" << cross
+                  << std::setfill(' ') << "\n";
+    };
+    
+    // Print table header
+    std::cout << "\n";
+    printHorizontalLine();
+    
+    std::cout << vertical << std::left << std::setw(pidWidth) << " PID" 
+              << vertical << std::setw(cmdWidth) << " Command" 
+              << vertical << std::setw(stateWidth) << " Status" 
+              << vertical << std::setw(timeWidth) << " Runtime" 
+              << vertical << "\n";
+    
+    printHorizontalLine();
+    
+    // Print process rows
     for (const auto& p : g_processes) {
-        std::cout << "PID: " << p.pid << ", Command: " << p.command
-                  << ", State: " << (p.state == ProcessState::Running ? "Running" : "Suspended") << "\n";
+        std::string truncatedCmd = p.command.length() > cmdWidth-2 ? 
+                                 p.command.substr(0, cmdWidth-5) + "..." : p.command;
+        std::string stateStr = (p.state == ProcessState::Running ? "Running" : "Suspended");
+        
+        std::cout << vertical << " " << std::left << std::setw(pidWidth-1) << p.pid
+                  << vertical << " " << std::setw(cmdWidth-1) << truncatedCmd
+                  << vertical << " " << std::setw(stateWidth-1) << stateStr
+                  << vertical << " " << std::setw(timeWidth-1) << getRunningTime(p.startTime)
+                  << vertical << "\n";
     }
+    
     if (g_processes.empty()) {
-        std::cout << "No tracked processes.\n";
+        std::cout << vertical << " " << std::left << std::setw(pidWidth + cmdWidth + stateWidth + timeWidth + 3) 
+                  << " No tracked processes " << vertical << "\n";
     }
+    
+    printHorizontalLine();
+    std::cout << "\n";
 }
 
 bool terminateProcess(int pid) {
@@ -196,46 +263,18 @@ bool startBackgroundProcess(const std::string& command, bool addPause = false) {
     std::cout << "Background process started with PID: " << pi.dwProcessId << "\n";
 
     std::lock_guard<std::mutex> lock(processMutex);
-    g_processes.push_back({ (int)pi.dwProcessId, command, ProcessState::Running });
+    //g_processes.push_back({ (int)pi.dwProcessId, command, ProcessState::Running });
+    g_processes.push_back({ 
+    static_cast<int>(pi.dwProcessId), 
+    command, 
+    ProcessState::Running 
+    });
 
     CloseHandle(pi.hProcess);
     CloseHandle(pi.hThread);
     return true;
 }
 
-// Utility functions
-void runChild(bool is_background, std::string command) {
-    std::string cmd = "programs/child.exe " + command;
-    is_background ? startBackgroundProcess(cmd, true) : startForegroundProcess(cmd);
-}
 
-void runCountdown(bool is_background, int seconds) {
-    std::string cmd = "programs/countdown.exe " + std::to_string(seconds);
-    is_background ? startBackgroundProcess(cmd, true) : startForegroundProcess(cmd);
-}
-
-void runTicTacToe(bool is_background) {
-    std::string cmd = "programs/tictactoe.exe";
-    is_background ? startBackgroundProcess(cmd, true) : startForegroundProcess(cmd);
-}
-
-void runSpinner(bool is_background) {
-    std::string cmd = "programs/spinner.exe";
-    is_background ? startBackgroundProcess(cmd, false) : startForegroundProcess(cmd);
-}
-
-void runLogger(bool is_background) {
-    std::string cmd = "programs/logger.exe";
-    is_background ? startBackgroundProcess(cmd, false) : startForegroundProcess(cmd);
-}
-
-void runHeart(bool is_background) {
-    std::string cmd = "programs/heart.exe";
-    is_background ? startBackgroundProcess(cmd, false) : startForegroundProcess(cmd);
-}
- void runDuck(bool is_background) {
-    std::string cmd = "programs/duck.exe";
-    is_background ? startBackgroundProcess(cmd, false) : startForegroundProcess(cmd);
- }
 
 } // namespace process

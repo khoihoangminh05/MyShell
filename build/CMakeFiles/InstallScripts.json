@@ -2,7 +2,7 @@
 	"InstallScripts" : 
 	[
 		"D:/Projects/MyShell/build/cmake_install.cmake",
-		"D:/Projects/MyShell/build/background_programs/cmake_install.cmake"
+		"D:/Projects/MyShell/build/programs/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -246,15 +246,17 @@ CMakeFiles/MyShell.dir/src/commands/help.cpp.obj: D:/Projects/MyShell/src/comman
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
   D:/Projects/MyShell/src/commands/help.h
 
-CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: D:/Projects/MyShell/src/commands/script.cpp \
+CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj: D:/Projects/MyShell/src/commands/run_script.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
   C:/msys64/ucrt64/include/_mingw_off_t.h \
   C:/msys64/ucrt64/include/_mingw_secapi.h \
   C:/msys64/ucrt64/include/_mingw_stat64.h \
   C:/msys64/ucrt64/include/_timeval.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/algorithm \
   C:/msys64/ucrt64/include/c++/13.1.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bit \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/algorithmfwd.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/alloc_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/allocated_ptr.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/allocator.h \
@@ -311,20 +313,24 @@ CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: D:/Projects/MyShell/src/comm
   C:/msys64/ucrt64/include/c++/13.1.0/bits/shared_ptr_base.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_abs.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algo.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_construct.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_function.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_heap.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_pair.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_tempbuf.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_uninitialized.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_vector.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/streambuf.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/uniform_int_dist.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/unique_ptr.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator_args.h \
@@ -363,6 +369,8 @@ CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: D:/Projects/MyShell/src/comm
   C:/msys64/ucrt64/include/c++/13.1.0/locale \
   C:/msys64/ucrt64/include/c++/13.1.0/new \
   C:/msys64/ucrt64/include/c++/13.1.0/ostream \
+  C:/msys64/ucrt64/include/c++/13.1.0/pstl/execution_defs.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ratio \
   C:/msys64/ucrt64/include/c++/13.1.0/sstream \
@@ -430,8 +438,7 @@ CMakeFiles/MyShell.dir/src/commands/script.cpp.obj: D:/Projects/MyShell/src/comm
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
   D:/Projects/MyShell/src/shell/command_executor.h \
-  D:/Projects/MyShell/src/shell/input_parser.h \
-  D:/Projects/MyShell/src/commands/script.h
+  D:/Projects/MyShell/src/commands/run_script.h
 
 CMakeFiles/MyShell.dir/src/commands/set_color.cpp.obj: D:/Projects/MyShell/src/commands/set_color.cpp \
   C:/msys64/ucrt64/include/_bsd_types.h \
@@ -2246,6 +2253,7 @@ CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/proc
   C:/msys64/ucrt64/include/c++/13.1.0/bits/char_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/charconv.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/chrono.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/codecvt.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_forced.h \
@@ -2261,8 +2269,11 @@ CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/proc
   C:/msys64/ucrt64/include/c++/13.1.0/bits/istream.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_classes.tcc \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_conv.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets.tcc \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets_nonio.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/localefwd.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/memoryfwd.h \
@@ -2275,9 +2286,11 @@ CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/proc
   C:/msys64/ucrt64/include/c++/13.1.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/quoted_string.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_mutex.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_thread.h \
@@ -2327,11 +2340,13 @@ CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/proc
   C:/msys64/ucrt64/include/c++/13.1.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/type_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/initializer_list \
+  C:/msys64/ucrt64/include/c++/13.1.0/iomanip \
   C:/msys64/ucrt64/include/c++/13.1.0/ios \
   C:/msys64/ucrt64/include/c++/13.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/13.1.0/iostream \
   C:/msys64/ucrt64/include/c++/13.1.0/istream \
   C:/msys64/ucrt64/include/c++/13.1.0/limits \
+  C:/msys64/ucrt64/include/c++/13.1.0/locale \
   C:/msys64/ucrt64/include/c++/13.1.0/mutex \
   C:/msys64/ucrt64/include/c++/13.1.0/new \
   C:/msys64/ucrt64/include/c++/13.1.0/ostream \
@@ -2339,6 +2354,7 @@ CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/proc
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ratio \
+  C:/msys64/ucrt64/include/c++/13.1.0/sstream \
   C:/msys64/ucrt64/include/c++/13.1.0/stdexcept \
   C:/msys64/ucrt64/include/c++/13.1.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/13.1.0/streambuf \
@@ -2360,7 +2376,9 @@ CMakeFiles/MyShell.dir/src/process/process.cpp.obj: D:/Projects/MyShell/src/proc
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/ucrt64/include/cderr.h \
   C:/msys64/ucrt64/include/cguid.h \
   C:/msys64/ucrt64/include/combaseapi.h \
@@ -2645,6 +2663,7 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bit \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/alloc_traits.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/allocated_ptr.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/allocator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/basic_ios.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/basic_ios.tcc \
@@ -2652,6 +2671,8 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/bits/basic_string.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/char_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/charconv.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/chrono.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/codecvt.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_forced.h \
@@ -2661,6 +2682,10 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/bits/exception.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_defines.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_ptr.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/fs_dir.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/fs_fwd.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/fs_ops.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/fs_path.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/functexcept.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/functional_hash.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/hash_bytes.h \
@@ -2671,8 +2696,11 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/bits/istream.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_classes.tcc \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_conv.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets.tcc \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets_nonio.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/localefwd.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/memoryfwd.h \
@@ -2682,12 +2710,17 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/bits/node_handle.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/ostream.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/ostream_insert.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/parse_numbers.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/quoted_string.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/shared_ptr.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/shared_ptr_base.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h \
@@ -2703,6 +2736,7 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/unique_ptr.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/unordered_set.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator_args.h \
@@ -2711,9 +2745,12 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/cctype \
   C:/msys64/ucrt64/include/c++/13.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/13.1.0/clocale \
+  C:/msys64/ucrt64/include/c++/13.1.0/codecvt \
   C:/msys64/ucrt64/include/c++/13.1.0/cstddef \
+  C:/msys64/ucrt64/include/c++/13.1.0/cstdint \
   C:/msys64/ucrt64/include/c++/13.1.0/cstdio \
   C:/msys64/ucrt64/include/c++/13.1.0/cstdlib \
+  C:/msys64/ucrt64/include/c++/13.1.0/ctime \
   C:/msys64/ucrt64/include/c++/13.1.0/cwchar \
   C:/msys64/ucrt64/include/c++/13.1.0/cwctype \
   C:/msys64/ucrt64/include/c++/13.1.0/debug/assertions.h \
@@ -2722,17 +2759,24 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/ext/aligned_buffer.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/alloc_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/atomicity.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/ext/concurrence.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/numeric_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/type_traits.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/filesystem \
   C:/msys64/ucrt64/include/c++/13.1.0/initializer_list \
+  C:/msys64/ucrt64/include/c++/13.1.0/iomanip \
   C:/msys64/ucrt64/include/c++/13.1.0/ios \
   C:/msys64/ucrt64/include/c++/13.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/13.1.0/iostream \
   C:/msys64/ucrt64/include/c++/13.1.0/istream \
+  C:/msys64/ucrt64/include/c++/13.1.0/limits \
+  C:/msys64/ucrt64/include/c++/13.1.0/locale \
   C:/msys64/ucrt64/include/c++/13.1.0/new \
   C:/msys64/ucrt64/include/c++/13.1.0/ostream \
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/ratio \
+  C:/msys64/ucrt64/include/c++/13.1.0/sstream \
   C:/msys64/ucrt64/include/c++/13.1.0/stdexcept \
   C:/msys64/ucrt64/include/c++/13.1.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/13.1.0/streambuf \
@@ -2754,7 +2798,9 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/ucrt64/include/corecrt.h \
   C:/msys64/ucrt64/include/corecrt_startup.h \
   C:/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -2778,6 +2824,7 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -2790,9 +2837,10 @@ CMakeFiles/MyShell.dir/src/shell/command_executor.cpp.obj: D:/Projects/MyShell/s
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
   D:/Projects/MyShell/src/commands/help.h \
-  D:/Projects/MyShell/src/commands/script.h \
+  D:/Projects/MyShell/src/commands/run_script.h \
   D:/Projects/MyShell/src/commands/set_color.h \
   D:/Projects/MyShell/src/core/environment.h \
   D:/Projects/MyShell/src/core/scheduler.h \
@@ -3979,6 +4027,8 @@ C:/msys64/ucrt64/include/wingdi.h:
 
 C:/msys64/ucrt64/include/objidl.h:
 
+D:/Projects/MyShell/src/commands/run_script.cpp:
+
 C:/msys64/ucrt64/include/c++/13.1.0/ext/type_traits.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/pstl/pstl_config.h:
@@ -4211,9 +4261,9 @@ C:/msys64/ucrt64/include/wctype.h:
 
 D:/Projects/MyShell/src/commands/help.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h:
+C:/msys64/ucrt64/include/c++/13.1.0/algorithm:
 
-D:/Projects/MyShell/src/commands/script.cpp:
+C:/msys64/ucrt64/include/c++/13.1.0/bits/algorithmfwd.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/vpclmulqdqintrin.h:
 
@@ -4257,9 +4307,13 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/shared_ptr.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/shared_ptr_base.h:
 
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algo.h:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/fmaintrin.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_tempbuf.h:
 
 C:/msys64/ucrt64/include/apiset.h:
 
@@ -4284,6 +4338,10 @@ C:/msys64/ucrt64/include/c++/13.1.0/fstream:
 C:/msys64/ucrt64/include/c++/13.1.0/iomanip:
 
 C:/msys64/ucrt64/include/c++/13.1.0/limits:
+
+C:/msys64/ucrt64/include/c++/13.1.0/pstl/execution_defs.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/pstl/glue_algorithm_defs.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/sstream:
 
@@ -4317,9 +4375,7 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h:
 
 D:/Projects/MyShell/src/shell/command_executor.h:
 
-C:/msys64/ucrt64/include/winioctl.h:
-
-D:/Projects/MyShell/src/commands/script.h:
+D:/Projects/MyShell/src/commands/run_script.h:
 
 D:/Projects/MyShell/src/commands/set_color.cpp:
 
@@ -4337,21 +4393,9 @@ C:/msys64/ucrt64/include/basetsd.h:
 
 C:/msys64/ucrt64/include/bemapiset.h:
 
-C:/msys64/ucrt64/include/c++/13.1.0/algorithm:
-
-C:/msys64/ucrt64/include/c++/13.1.0/bits/algorithmfwd.h:
-
 C:/msys64/ucrt64/include/c++/13.1.0/bits/enable_special_members.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/node_handle.h:
-
-C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algo.h:
-
-C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_tempbuf.h:
-
-C:/msys64/ucrt64/include/c++/13.1.0/pstl/execution_defs.h:
-
-C:/msys64/ucrt64/include/c++/13.1.0/pstl/glue_algorithm_defs.h:
 
 C:/msys64/ucrt64/include/combaseapi.h:
 
@@ -4537,6 +4581,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bf16vlintrin.h:
 
 C:/msys64/ucrt64/include/winefs.h:
 
+C:/msys64/ucrt64/include/winioctl.h:
+
 C:/msys64/ucrt64/include/winnetwk.h:
 
 C:/msys64/ucrt64/include/winnls.h:
@@ -4660,6 +4706,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wbnoinvdintrin.h:
 C:/msys64/ucrt64/include/c++/13.1.0/bits/std_thread.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wmmintrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xtestintrin.h:
 

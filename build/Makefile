@@ -138,7 +138,7 @@ countdown: cmake_check_build_system
 
 # fast build rule for target.
 countdown/fast:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\countdown.dir\build.make background_programs/CMakeFiles/countdown.dir/build
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\countdown.dir\build.make programs/CMakeFiles/countdown.dir/build
 .PHONY : countdown/fast
 
 #=============================================================================
@@ -151,7 +151,7 @@ tictactoe: cmake_check_build_system
 
 # fast build rule for target.
 tictactoe/fast:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\tictactoe.dir\build.make background_programs/CMakeFiles/tictactoe.dir/build
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\tictactoe.dir\build.make programs/CMakeFiles/tictactoe.dir/build
 .PHONY : tictactoe/fast
 
 #=============================================================================
@@ -164,7 +164,7 @@ spinner: cmake_check_build_system
 
 # fast build rule for target.
 spinner/fast:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\spinner.dir\build.make background_programs/CMakeFiles/spinner.dir/build
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\spinner.dir\build.make programs/CMakeFiles/spinner.dir/build
 .PHONY : spinner/fast
 
 #=============================================================================
@@ -177,7 +177,7 @@ logger: cmake_check_build_system
 
 # fast build rule for target.
 logger/fast:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\logger.dir\build.make background_programs/CMakeFiles/logger.dir/build
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\logger.dir\build.make programs/CMakeFiles/logger.dir/build
 .PHONY : logger/fast
 
 #=============================================================================
@@ -190,7 +190,7 @@ duck: cmake_check_build_system
 
 # fast build rule for target.
 duck/fast:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\duck.dir\build.make background_programs/CMakeFiles/duck.dir/build
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\duck.dir\build.make programs/CMakeFiles/duck.dir/build
 .PHONY : duck/fast
 
 #=============================================================================
@@ -203,7 +203,7 @@ heart: cmake_check_build_system
 
 # fast build rule for target.
 heart/fast:
-	$(MAKE) $(MAKESILENT) -f background_programs\CMakeFiles\heart.dir\build.make background_programs/CMakeFiles/heart.dir/build
+	$(MAKE) $(MAKESILENT) -f programs\CMakeFiles\heart.dir\build.make programs/CMakeFiles/heart.dir/build
 .PHONY : heart/fast
 
 main.obj: main.cpp.obj
@@ -254,29 +254,29 @@ src/commands/help.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/help.cpp.s
 .PHONY : src/commands/help.cpp.s
 
-src/commands/script.obj: src/commands/script.cpp.obj
-.PHONY : src/commands/script.obj
+src/commands/run_script.obj: src/commands/run_script.cpp.obj
+.PHONY : src/commands/run_script.obj
 
 # target to build an object file
-src/commands/script.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/script.cpp.obj
-.PHONY : src/commands/script.cpp.obj
+src/commands/run_script.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.obj
+.PHONY : src/commands/run_script.cpp.obj
 
-src/commands/script.i: src/commands/script.cpp.i
-.PHONY : src/commands/script.i
+src/commands/run_script.i: src/commands/run_script.cpp.i
+.PHONY : src/commands/run_script.i
 
 # target to preprocess a source file
-src/commands/script.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/script.cpp.i
-.PHONY : src/commands/script.cpp.i
+src/commands/run_script.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.i
+.PHONY : src/commands/run_script.cpp.i
 
-src/commands/script.s: src/commands/script.cpp.s
-.PHONY : src/commands/script.s
+src/commands/run_script.s: src/commands/run_script.cpp.s
+.PHONY : src/commands/run_script.s
 
 # target to generate assembly for a file
-src/commands/script.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/script.cpp.s
-.PHONY : src/commands/script.cpp.s
+src/commands/run_script.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyShell.dir\build.make CMakeFiles/MyShell.dir/src/commands/run_script.cpp.s
+.PHONY : src/commands/run_script.cpp.s
 
 src/commands/set_color.obj: src/commands/set_color.cpp.obj
 .PHONY : src/commands/set_color.obj
@@ -563,9 +563,9 @@ help:
 	@echo ... src/commands/help.obj
 	@echo ... src/commands/help.i
 	@echo ... src/commands/help.s
-	@echo ... src/commands/script.obj
-	@echo ... src/commands/script.i
-	@echo ... src/commands/script.s
+	@echo ... src/commands/run_script.obj
+	@echo ... src/commands/run_script.i
+	@echo ... src/commands/run_script.s
 	@echo ... src/commands/set_color.obj
 	@echo ... src/commands/set_color.i
 	@echo ... src/commands/set_color.s

@@ -68,115 +68,130 @@ namespace io{
 
     // --- Các hàm quản lý file đã cải tiến ---
 
-    void write_file(const std::vector<std::string> &args)
+   std::string unescape_string(const std::string& input) {
+    std::string result;
+    result.reserve(input.size());
+    for (size_t i = 0; i < input.size(); ++i) {
+        if (input[i] == '\\' && i + 1 < input.size()) {
+            switch (input[i + 1]) {
+                case 'n': result += '\n'; break;
+                case 't': result += '\t'; break;
+                case 'r': result += '\r'; break;
+                case '\\': result += '\\'; break;
+                case '"': result += '"'; break;
+                default: result += input[i + 1]; break;
+            }
+            ++i;
+        } else {
+            result += input[i];
+        }
+    }
+    return result;
+}
+
+void write_file(const std::vector<std::string> &args)
+{
+    if (args.size() < 2 || args.size() > 4)
     {
-        // Cải tiến: Kiểm tra số lượng đối số chặt chẽ hơn và dùng error_code
-        if (args.size() < 2 || args.size() > 4)
+        std::cerr << "Usage: write_file <content> <filename> [~HEAD | ~FOOT | ~LINE N]" << std::endl;
+        return;
+    }
+
+    std::string content = unescape_string(args[0]);
+    fs::path filename = args[1];
+    std::error_code ec;
+
+    // Kiểm tra file tồn tại và là file thường
+    if (fs::exists(filename, ec) && !fs::is_regular_file(filename, ec)) {
+        if (ec) std::cerr << "Error checking file: " << ec.message() << std::endl;
+        else std::cerr << "Path is not a regular file: " << filename << std::endl;
+        return;
+    }
+
+    // Trường hợp chỉ có content + filename => ghi vào cuối
+    if (args.size() == 2)
+    {
+        std::ofstream file(filename, std::ios::app);
+        if (!file)
         {
-            std::cerr << "Usage: write_file <content> <filename> [~HEAD | ~FOOT | ~LINE N]" << std::endl;
+            std::cerr << "Failed to open file: " << filename << std::endl;
             return;
         }
+        file << content << std::endl;
+        std::cout << "Successfully wrote to file (appended): " << filename << std::endl;
+        return;
+    }
 
-        std::string content = args[0];
-        fs::path filename = args[1];
-        std::error_code ec;
+    // Đọc toàn bộ file vào vector dòng
+    std::ifstream file_in(filename);
+    std::vector<std::string> lines;
+    std::string line;
 
-        // Kiểm tra filename có phải là file không
-        if (fs::exists(filename, ec) && !fs::is_regular_file(filename, ec)) {
-            if (ec) { std::cerr << "Error checking filename type: " << ec.message() << std::endl; }
-            else { std::cerr << "Path is not a regular file: " << filename << std::endl; }
+    if (file_in) {
+        while (std::getline(file_in, line)) {
+            lines.push_back(line);
+        }
+        file_in.close();
+    }
+
+    std::string position = args[2];
+
+    if (position == "~HEAD")
+    {
+        lines.insert(lines.begin(), content);
+    }
+    else if (position == "~FOOT")
+    {
+        lines.push_back(content);
+    }
+    else if (position == "~LINE")
+    {
+        if (args.size() != 4)
+        {
+            std::cerr << "Usage: write_file <content> <filename> ~LINE N" << std::endl;
             return;
         }
-
-        if (args.size() == 2)
-        {
-            // Mặc định ghi vào cuối file
-            std::ofstream file(filename, std::ios::app);
-            if (!file)
-            {
-                std::cerr << "Failed to open file: " << filename << std::endl;
+        try {
+            size_t line_number = std::stoul(args[3]);
+            if (line_number == 0) {
+                std::cerr << "Line number must be greater than 0." << std::endl;
                 return;
             }
-            file << content << std::endl;
-            file.close();
-        }
-        else // Có tham số vị trí
-        {
-            std::string position = args[2];
-            std::ifstream file_in(filename);
-            if (!file_in)
-            {
-                std::cerr << "Failed to open file: " << filename << std::endl;
-                return;
-            }
-
-            std::vector<std::string> lines;
-            std::string line;
-            while (std::getline(file_in, line))
-            {
-                lines.push_back(line);
-            }
-            file_in.close();
-
-            if (position == "~HEAD")
-            {
-                lines.insert(lines.begin(), content);
-            }
-            else if (position == "~FOOT")
-            {
+            if (line_number - 1 <= lines.size()) {
+                lines.insert(lines.begin() + (line_number - 1), content);
+            } else {
                 lines.push_back(content);
             }
-            else if (position == "~LINE")
-            {
-                if (args.size() != 4)
-                {
-                    std::cerr << "Usage: write_file <content> <filename> ~LINE N" << std::endl;
-                    return;
-                }
-                try { // Cải tiến: Bắt lỗi stoi
-                    size_t line_number = std::stoul(args[3]); // Dùng stoul cho unsigned long
-                    if (line_number == 0) { // Dòng số bắt đầu từ 1
-                        std::cerr << "Line number must be greater than 0." << std::endl;
-                        return;
-                    }
-                    if (line_number - 1 < lines.size())
-                    {
-                        lines.insert(lines.begin() + (line_number - 1), content);
-                    }
-                    else // Nếu dòng số lớn hơn số dòng hiện có, thêm vào cuối
-                    {
-                        lines.push_back(content);
-                    }
-                } catch (const std::invalid_argument&) {
-                    std::cerr << "Invalid line number: Not a number." << std::endl;
-                    return;
-                } catch (const std::out_of_range&) {
-                    std::cerr << "Line number out of range for integer type." << std::endl;
-                    return;
-                }
-            }
-            else
-            {
-                std::cerr << "Invalid position format. Use ~HEAD, ~FOOT, or ~LINE N." << std::endl;
-                return;
-            }
-
-            // Ghi lại toàn bộ nội dung đã sửa đổi vào file
-            std::ofstream file_out(filename);
-            if (!file_out)
-            {
-                std::cerr << "Failed to open file for writing: " << filename << std::endl;
-                return;
-            }
-
-            for (const auto &l : lines)
-            {
-                file_out << l << std::endl;
-            }
-            file_out.close();
+        } catch (const std::invalid_argument&) {
+            std::cerr << "Invalid line number: Not a number." << std::endl;
+            return;
+        } catch (const std::out_of_range&) {
+            std::cerr << "Line number out of range." << std::endl;
+            return;
         }
-        std::cout << "Successfully wrote to file: " << filename << std::endl;
     }
+    else
+    {
+        std::cerr << "Invalid position. Use ~HEAD, ~FOOT, or ~LINE N." << std::endl;
+        return;
+    }
+
+    // Ghi toàn bộ nội dung đã chỉnh sửa trở lại file
+    std::ofstream file_out(filename);
+    if (!file_out)
+    {
+        std::cerr << "Failed to open file for writing: " << filename << std::endl;
+        return;
+    }
+
+    for (const auto& l : lines)
+    {
+        file_out << l << std::endl;
+    }
+    file_out.close();
+
+    std::cout << "Successfully wrote to file: " << filename << std::endl;
+}
 
     void read_file(const std::vector<std::string> &args)
     {
